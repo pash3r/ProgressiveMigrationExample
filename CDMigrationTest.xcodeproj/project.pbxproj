@@ -28,6 +28,7 @@
 		025B0EBA2028B40400A6BDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		025B0EC52029B3C400A6BDED /* SimpleEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		025B0EC62029B3C400A6BDED /* SimpleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		025B0EC92029BE9600A6BDED /* CDMigrationTest2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDMigrationTest2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,9 +348,10 @@
 		025B0EB22028B40400A6BDED /* CDMigrationTest.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				025B0EC92029BE9600A6BDED /* CDMigrationTest2.xcdatamodel */,
 				025B0EB32028B40400A6BDED /* CDMigrationTest.xcdatamodel */,
 			);
-			currentVersion = 025B0EB32028B40400A6BDED /* CDMigrationTest.xcdatamodel */;
+			currentVersion = 025B0EC92029BE9600A6BDED /* CDMigrationTest2.xcdatamodel */;
 			path = CDMigrationTest.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

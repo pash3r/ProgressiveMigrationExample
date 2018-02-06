@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
 
-        let fr: NSFetchRequest<SimpleEntity> = NSFetchRequest(entityName: String(describing: SimpleEntity.self))
+        let fr: NSFetchRequest<SimpleEntity> = SimpleEntity.fetchRequest()
         dataSource = (try? moc.fetch(fr)) ?? []
         dataSource.sort(by: { $0.myId < $1.myId })
         tableView.reloadData()
