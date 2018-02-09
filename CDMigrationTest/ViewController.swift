@@ -51,11 +51,18 @@ class ViewController: UIViewController {
     }
     
     func createAndSaveObject(with id: Int) -> SimpleEntity? {
-        let obj: SimpleEntity = NSEntityDescription.insertNewObject(forEntityName: String(describing: SimpleEntity.self),
-                                                                    into: moc) as! SimpleEntity
-        obj.myId = Int16(id)
-        obj.someText = "random text" + "\(id)"
-        obj.someBool = arc4random_uniform(UInt32(2)) == 1 ? true : false
+        let txtObj: TextEntity = create(obj: TextEntity.self) {
+            $0.text = "rnd txt" + "\(id)"
+        }
+        
+        let obj: SimpleEntity = create(obj: SimpleEntity.self) {
+            $0.myId = Int16(id)
+//            $0.someText = "random text" + "\(id)"
+            $0.someBool = arc4random_uniform(UInt32(2)) == 1 ? true : false
+            $0.createdDate = Date() as NSDate
+            $0.text = txtObj
+        }
+        
         
         guard moc.hasChanges else {
             print("has no changes; nothing to save")
@@ -77,6 +84,14 @@ class ViewController: UIViewController {
         print("moc did save")
         return obj
     }
+    
+    func create<T: NSManagedObject>(obj: T.Type, configBlock: (T) -> Swift.Void) -> T {
+        let obj: T = NSEntityDescription.insertNewObject(forEntityName: String(describing: obj),
+                                                         into: moc) as! T
+        configBlock(obj)
+        
+        return obj
+    }
 
 }
 
@@ -92,7 +107,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = dataSource[indexPath.row].someText
+//        cell.textLabel?.text = dataSource[indexPath.row].someText
+        let obj = dataSource[indexPath.row]
+        cell.textLabel?.text = obj.text?.text
         
         return cell
     }

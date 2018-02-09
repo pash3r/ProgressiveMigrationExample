@@ -1,5 +1,5 @@
 //
-//  SimpleEntity+CoreDataClass.swift
+//  TextEntity+CoreDataClass.swift
 //  CDMigrationTest
 //
 //  Created by Pavel Tikhonov on 09.02.18.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(SimpleEntity)
-public class SimpleEntity: NSManagedObject {
+@objc(TextEntity)
+public class TextEntity: NSManagedObject {
 
 }

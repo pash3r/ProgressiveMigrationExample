@@ -2,7 +2,7 @@
 //  SimpleEntity+CoreDataProperties.swift
 //  CDMigrationTest
 //
-//  Created by Pavel Tikhonov on 06.02.18.
+//  Created by Pavel Tikhonov on 09.02.18.
 //  Copyright © 2018 Pavel Tikhonov. All rights reserved.
 //
 //
@@ -17,9 +17,10 @@ extension SimpleEntity {
         return NSFetchRequest<SimpleEntity>(entityName: "SimpleEntity")
     }
 
+    @NSManaged public var createdDate: NSDate?
     @NSManaged public var myId: Int16
     @NSManaged public var someBool: Bool
-    @NSManaged public var someText: String?
-    @NSManaged public var createdDate: Date?
+//    @NSManaged public var someText: String?
+    @NSManaged public var text: TextEntity?
 
 }
