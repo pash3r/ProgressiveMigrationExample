@@ -39,14 +39,12 @@ class CDMigrationTestTests: XCTestCase {
     
     
     func testDatabaseInNotEmpty() {
-        let fr = NSFetchRequest<SimpleEntity>(entityName: String(describing: SimpleEntity.self))
-        let result = (try? helper.managedObjectContext.fetch(fr)) ?? []
+        let result = fetchAllData()
         XCTAssertTrue(result.count > 0, "data disappeared")
     }
     
     func testEntityHasText() {
-        let fr = NSFetchRequest<SimpleEntity>(entityName: String(describing: SimpleEntity.self))
-        let result = (try? helper.managedObjectContext.fetch(fr)) ?? []
+        let result = fetchAllData()
         XCTAssert(result.count > 0, "data disappeared")
         for e in result {
             guard let t = e.text else {
@@ -58,6 +56,15 @@ class CDMigrationTestTests: XCTestCase {
         }
     }
     
+    func testCreatedDateIsNotNil() {
+        let result = fetchAllData()
+        XCTAssert(result.count > 0, "data disappeared")
+        for e in result {
+            XCTAssertNotNil(e.createdDate, "createdDate is nil")
+        }
+    }
+    
+    // MARK: - Helpers
     
     func startMigration() {
         let momdUrl: URL = Bundle.main.url(forResource: "CDMigrationTest", withExtension: "momd")!
@@ -65,6 +72,11 @@ class CDMigrationTestTests: XCTestCase {
         
         let ms = CDMigrationService(mom: mom)
         ms.performMigration(at: helper.sourceUrl)
+    }
+    
+    func fetchAllData() -> [SimpleEntity] {
+        let fr = NSFetchRequest<SimpleEntity>(entityName: String(describing: SimpleEntity.self))
+        return (try? helper.managedObjectContext.fetch(fr)) ?? []
     }
         
 }
