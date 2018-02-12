@@ -27,6 +27,7 @@
 		025B0EB92028B40400A6BDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B0EB72028B40400A6BDED /* LaunchScreen.storyboard */; };
 		025B0ED1202C94F300A6BDED /* v1_to_v2_mappingModel.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 025B0ED0202C94F300A6BDED /* v1_to_v2_mappingModel.xcmappingmodel */; };
 		025B0ED4202C95DC00A6BDED /* v1_to_v2_migrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B0ED3202C95DC00A6BDED /* v1_to_v2_migrationPolicy.swift */; };
+		02CDF7C72032067700E2A4AC /* GeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDF7C62032067600E2A4AC /* GeneralHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		025B0EC92029BE9600A6BDED /* CDMigrationTest2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDMigrationTest2.xcdatamodel; sourceTree = "<group>"; };
 		025B0ED0202C94F300A6BDED /* v1_to_v2_mappingModel.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = v1_to_v2_mappingModel.xcmappingmodel; sourceTree = "<group>"; };
 		025B0ED3202C95DC00A6BDED /* v1_to_v2_migrationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = v1_to_v2_migrationPolicy.swift; sourceTree = "<group>"; };
+		02CDF7C62032067600E2A4AC /* GeneralHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		022DE1D4202DFF0B00B95854 /* CDMigrationTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				02CDF7C52032065900E2A4AC /* Helpers */,
 				022DE1D5202DFF0B00B95854 /* CDMigrationTestTests.swift */,
 				022DE1D7202DFF0B00B95854 /* Info.plist */,
 			);
@@ -172,6 +175,14 @@
 				022DE1C5202DB43900B95854 /* v2_to_v3_migrationPolicy.swift */,
 			);
 			path = MigrationPolicies;
+			sourceTree = "<group>";
+		};
+		02CDF7C52032065900E2A4AC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				02CDF7C62032067600E2A4AC /* GeneralHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CDF7C72032067700E2A4AC /* GeneralHelper.swift in Sources */,
 				022DE1DD202E002300B95854 /* AppDelegate.swift in Sources */,
 				022DE1D6202DFF0B00B95854 /* CDMigrationTestTests.swift in Sources */,
 				022DE1E8202E135D00B95854 /* CDMigrationService.swift in Sources */,

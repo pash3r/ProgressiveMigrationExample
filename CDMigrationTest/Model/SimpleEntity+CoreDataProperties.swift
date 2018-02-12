@@ -20,7 +20,7 @@ extension SimpleEntity {
     @NSManaged public var createdDate: NSDate?
     @NSManaged public var myId: Int16
     @NSManaged public var someBool: Bool
-//    @NSManaged public var someText: String?
+    @NSManaged public var someText: String?
     @NSManaged public var text: TextEntity?
 
 }
