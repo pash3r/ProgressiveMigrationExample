@@ -17,10 +17,10 @@ extension SimpleEntity {
         return NSFetchRequest<SimpleEntity>(entityName: "SimpleEntity")
     }
 
-    @NSManaged public var createdDate: NSDate?
+//    @NSManaged public var createdDate: NSDate?
     @NSManaged public var myId: Int16
     @NSManaged public var someBool: Bool
-//    @NSManaged public var someText: String?
-    @NSManaged public var text: TextEntity?
+    @NSManaged public var someText: String?
+//    @NSManaged public var text: TextEntity?
 
 }

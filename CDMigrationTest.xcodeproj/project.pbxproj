@@ -13,6 +13,12 @@
 		022DE1CC202DBB8600B95854 /* SimpleEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE1C8202DBB8600B95854 /* SimpleEntity+CoreDataProperties.swift */; };
 		022DE1CD202DBB8600B95854 /* TextEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE1C9202DBB8600B95854 /* TextEntity+CoreDataClass.swift */; };
 		022DE1CE202DBB8600B95854 /* TextEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE1CA202DBB8600B95854 /* TextEntity+CoreDataProperties.swift */; };
+		022DE1D6202DFF0B00B95854 /* CDMigrationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE1D5202DFF0B00B95854 /* CDMigrationTestTests.swift */; };
+		022DE1DD202E002300B95854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B0EAB2028B40400A6BDED /* AppDelegate.swift */; };
+		022DE1E0202E02F500B95854 /* CDMigrationTest-old.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 022DE1DF202E02F500B95854 /* CDMigrationTest-old.sqlite */; };
+		022DE1E1202E02F500B95854 /* CDMigrationTest-old.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 022DE1DF202E02F500B95854 /* CDMigrationTest-old.sqlite */; };
+		022DE1E7202E133E00B95854 /* CDMigrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE1E5202E109000B95854 /* CDMigrationService.swift */; };
+		022DE1E8202E135D00B95854 /* CDMigrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE1E5202E109000B95854 /* CDMigrationService.swift */; };
 		025B0EAC2028B40400A6BDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B0EAB2028B40400A6BDED /* AppDelegate.swift */; };
 		025B0EAE2028B40400A6BDED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B0EAD2028B40400A6BDED /* ViewController.swift */; };
 		025B0EB12028B40400A6BDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B0EAF2028B40400A6BDED /* Main.storyboard */; };
@@ -23,6 +29,16 @@
 		025B0ED4202C95DC00A6BDED /* v1_to_v2_migrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B0ED3202C95DC00A6BDED /* v1_to_v2_migrationPolicy.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		022DE1D8202DFF0B00B95854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025B0EA02028B40400A6BDED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025B0EA72028B40400A6BDED;
+			remoteInfo = CDMigrationTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		022DE1BE202DB29600B95854 /* CDMigrationTest3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDMigrationTest3.xcdatamodel; sourceTree = "<group>"; };
 		022DE1C3202DB41400B95854 /* v2_to_v3_mappingModel.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = v2_to_v3_mappingModel.xcmappingmodel; sourceTree = "<group>"; };
@@ -31,6 +47,11 @@
 		022DE1C8202DBB8600B95854 /* SimpleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		022DE1C9202DBB8600B95854 /* TextEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		022DE1CA202DBB8600B95854 /* TextEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		022DE1D3202DFF0B00B95854 /* CDMigrationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDMigrationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		022DE1D5202DFF0B00B95854 /* CDMigrationTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMigrationTestTests.swift; sourceTree = "<group>"; };
+		022DE1D7202DFF0B00B95854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022DE1DF202E02F500B95854 /* CDMigrationTest-old.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CDMigrationTest-old.sqlite"; sourceTree = "<group>"; };
+		022DE1E5202E109000B95854 /* CDMigrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMigrationService.swift; sourceTree = "<group>"; };
 		025B0EA82028B40400A6BDED /* CDMigrationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDMigrationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B0EAB2028B40400A6BDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		025B0EAD2028B40400A6BDED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		022DE1D0202DFF0B00B95854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		025B0EA52028B40400A6BDED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +83,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		022DE1D4202DFF0B00B95854 /* CDMigrationTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				022DE1D5202DFF0B00B95854 /* CDMigrationTestTests.swift */,
+				022DE1D7202DFF0B00B95854 /* Info.plist */,
+			);
+			path = CDMigrationTestTests;
+			sourceTree = "<group>";
+		};
+		022DE1DE202E02D800B95854 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				022DE1DF202E02F500B95854 /* CDMigrationTest-old.sqlite */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		022DE1E4202E107B00B95854 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				022DE1E5202E109000B95854 /* CDMigrationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		025B0E9F2028B40400A6BDED = {
 			isa = PBXGroup;
 			children = (
 				025B0EAA2028B40400A6BDED /* CDMigrationTest */,
+				022DE1D4202DFF0B00B95854 /* CDMigrationTestTests */,
 				025B0EA92028B40400A6BDED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				025B0EA82028B40400A6BDED /* CDMigrationTest.app */,
+				022DE1D3202DFF0B00B95854 /* CDMigrationTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +129,8 @@
 		025B0EAA2028B40400A6BDED /* CDMigrationTest */ = {
 			isa = PBXGroup;
 			children = (
+				022DE1E4202E107B00B95854 /* Services */,
+				022DE1DE202E02D800B95854 /* Resources */,
 				025B0ED2202C958200A6BDED /* MigrationPolicies */,
 				025B0ECF202C94C400A6BDED /* CDModelMappings */,
 				025B0EC02028B8FB00A6BDED /* Model */,
@@ -120,6 +177,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		022DE1D2202DFF0B00B95854 /* CDMigrationTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022DE1DC202DFF0B00B95854 /* Build configuration list for PBXNativeTarget "CDMigrationTestTests" */;
+			buildPhases = (
+				022DE1CF202DFF0B00B95854 /* Sources */,
+				022DE1D0202DFF0B00B95854 /* Frameworks */,
+				022DE1D1202DFF0B00B95854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				022DE1D9202DFF0B00B95854 /* PBXTargetDependency */,
+			);
+			name = CDMigrationTestTests;
+			productName = CDMigrationTestTests;
+			productReference = 022DE1D3202DFF0B00B95854 /* CDMigrationTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		025B0EA72028B40400A6BDED /* CDMigrationTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 025B0EBD2028B40400A6BDED /* Build configuration list for PBXNativeTarget "CDMigrationTest" */;
@@ -147,6 +222,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Pavel Tikhonov";
 				TargetAttributes = {
+					022DE1D2202DFF0B00B95854 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 025B0EA72028B40400A6BDED;
+					};
 					025B0EA72028B40400A6BDED = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
@@ -167,11 +247,20 @@
 			projectRoot = "";
 			targets = (
 				025B0EA72028B40400A6BDED /* CDMigrationTest */,
+				022DE1D2202DFF0B00B95854 /* CDMigrationTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		022DE1D1202DFF0B00B95854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022DE1E1202E02F500B95854 /* CDMigrationTest-old.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		025B0EA62028B40400A6BDED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,12 +268,23 @@
 				025B0EB92028B40400A6BDED /* LaunchScreen.storyboard in Resources */,
 				025B0EB62028B40400A6BDED /* Assets.xcassets in Resources */,
 				025B0EB12028B40400A6BDED /* Main.storyboard in Resources */,
+				022DE1E0202E02F500B95854 /* CDMigrationTest-old.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		022DE1CF202DFF0B00B95854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022DE1DD202E002300B95854 /* AppDelegate.swift in Sources */,
+				022DE1D6202DFF0B00B95854 /* CDMigrationTestTests.swift in Sources */,
+				022DE1E8202E135D00B95854 /* CDMigrationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		025B0EA42028B40400A6BDED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +294,7 @@
 				025B0ED4202C95DC00A6BDED /* v1_to_v2_migrationPolicy.swift in Sources */,
 				025B0EB42028B40400A6BDED /* CDMigrationTest.xcdatamodeld in Sources */,
 				022DE1CD202DBB8600B95854 /* TextEntity+CoreDataClass.swift in Sources */,
+				022DE1E7202E133E00B95854 /* CDMigrationService.swift in Sources */,
 				025B0EAE2028B40400A6BDED /* ViewController.swift in Sources */,
 				025B0EAC2028B40400A6BDED /* AppDelegate.swift in Sources */,
 				022DE1CB202DBB8600B95854 /* SimpleEntity+CoreDataClass.swift in Sources */,
@@ -204,6 +305,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		022DE1D9202DFF0B00B95854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025B0EA72028B40400A6BDED /* CDMigrationTest */;
+			targetProxy = 022DE1D8202DFF0B00B95854 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		025B0EAF2028B40400A6BDED /* Main.storyboard */ = {
@@ -225,6 +334,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		022DE1DA202DFF0B00B95854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CDMigrationTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CDMigrationTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDMigrationTest.app/CDMigrationTest";
+			};
+			name = Debug;
+		};
+		022DE1DB202DFF0B00B95854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CDMigrationTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CDMigrationTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDMigrationTest.app/CDMigrationTest";
+			};
+			name = Release;
+		};
 		025B0EBB2028B40400A6BDED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +504,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		022DE1DC202DFF0B00B95854 /* Build configuration list for PBXNativeTarget "CDMigrationTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022DE1DA202DFF0B00B95854 /* Debug */,
+				022DE1DB202DFF0B00B95854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		025B0EA32028B40400A6BDED /* Build configuration list for PBXProject "CDMigrationTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

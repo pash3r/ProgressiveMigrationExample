@@ -57,10 +57,10 @@ class ViewController: UIViewController {
         
         let obj: SimpleEntity = create(obj: SimpleEntity.self) {
             $0.myId = Int16(id)
-//            $0.someText = "random text" + "\(id)"
+            $0.someText = "random text" + "\(id)"
             $0.someBool = arc4random_uniform(UInt32(2)) == 1 ? true : false
-            $0.createdDate = Date() as NSDate
-            $0.text = txtObj
+//            $0.createdDate = Date() as NSDate
+//            $0.text = txtObj
         }
         
         
@@ -107,9 +107,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-//        cell.textLabel?.text = dataSource[indexPath.row].someText
-        let obj = dataSource[indexPath.row]
-        cell.textLabel?.text = obj.text?.text
+        cell.textLabel?.text = dataSource[indexPath.row].someText
+//        let obj = dataSource[indexPath.row]
+//        cell.textLabel?.text = obj.text?.text
         
         return cell
     }
