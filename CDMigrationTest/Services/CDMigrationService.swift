@@ -12,6 +12,16 @@ import CoreData
 final class CDMigrationService: NSObject {
     
     private let managedObjectModel: NSManagedObjectModel!
+    
+    static func isMigrationNeeded(for mom: NSManagedObjectModel, sourceUrl: URL) -> Bool {
+        guard let sourceMetadata = try? NSPersistentStoreCoordinator.metadataForPersistentStore(ofType: NSSQLiteStoreType,
+                                                                                                at: sourceUrl,
+                                                                                                options: nil) else {
+                                                                                                    return false
+        }
+        
+        return !mom.isConfiguration(withName: nil, compatibleWithStoreMetadata: sourceMetadata)
+    }
 
     
     init(mom: NSManagedObjectModel) {

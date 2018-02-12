@@ -34,6 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return managedObjectContext
     }()
     
+    lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
+        return self.createPsc(with: self.managedObjectModel)
+    }()
+    
+    
     var momName: String {
         return "CDMigrationTest"
     }
@@ -80,22 +85,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = persistentStoreCoordinator
     }
     
-    
-    
-    lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
-        // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
-        // Create the coordinator and store
+    func createPsc(with mom: NSManagedObjectModel) -> NSPersistentStoreCoordinator {
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         let url = self.applicationDocumentsDirectory.appendingPathComponent("\(momName).sqlite")
         var failureReason = "There was an error creating or loading the application's saved data."
-//        let options: [AnyHashable : Any] = [
-//
-//            NSMigratePersistentStoresAutomaticallyOption : true,
-//            NSInferMappingModelAutomaticallyOption : true
-//        ]
+        
+        let pragmasOption: String = CDMigrationService.isMigrationNeeded(for: managedObjectModel, sourceUrl: sourceUrl) ? "DELETE" : "WAL"
+        let options: [AnyHashable : Any] = [
+            NSInferMappingModelAutomaticallyOption : true,
+            NSSQLitePragmasOption : ["journal_mode" : pragmasOption]
+        ]
         
         do {
-            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: url, options: nil)
+            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: url, options: options)
         } catch {
             // Report any error we got.
             var dict = [String: AnyObject]()
@@ -111,7 +113,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         return coordinator
-    }()
+    }
     
     // MARK: - Core Data Saving support
     

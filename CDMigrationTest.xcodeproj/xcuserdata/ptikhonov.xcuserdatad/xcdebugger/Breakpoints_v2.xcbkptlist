@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CDMigrationTest/ViewController.swift"
-            timestampString = "539891332.708887"
+            timestampString = "540128159.115787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CDMigrationTest/ViewController.swift"
-            timestampString = "539891332.709242"
+            timestampString = "540128159.1162831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CDMigrationTest/ViewController.swift"
-            timestampString = "539891332.709316"
+            timestampString = "540128159.116637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -89,56 +89,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CDMigrationTest/AppDelegate.swift"
-            timestampString = "539891332.7094589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "persistentStoreCoordinator"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; __ObjC.NSPersistentStoreCoordinator in CDMigrationTest.AppDelegate.persistentStoreCoordinator.getter : __ObjC.NSPersistentStoreCoordinator"
-                  moduleName = "CDMigrationTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ptikhonov/Desktop/Projects/Examples/CoreDataMigrationTest/CDMigrationTest/CDMigrationTest/AppDelegate.swift"
-                  timestampString = "539886527.857399"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "467">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; __ObjC.NSPersistentStoreCoordinator in CDMigrationTestTests.AppDelegate.persistentStoreCoordinator.getter : __ObjC.NSPersistentStoreCoordinator"
-                  moduleName = "CDMigrationTestTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ptikhonov/Desktop/Projects/Examples/CoreDataMigrationTest/CDMigrationTest/CDMigrationTest/AppDelegate.swift"
-                  timestampString = "539886534.075851"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "467">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "CDMigrationTestTests/CDMigrationTestTests.swift"
-            timestampString = "540127112.640892"
+            timestampString = "540128159.1169749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -154,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CDMigrationTestTests/CDMigrationTestTests.swift"
-            timestampString = "540127112.641204"
+            timestampString = "540128159.117117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -170,59 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CDMigrationTest/Services/CDMigrationService.swift"
-            timestampString = "540127112.6415"
+            timestampString = "540128159.117202"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "performMigration(at:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CDMigrationTest.CDMigrationService.performMigration(at: Foundation.URL) -&gt; Swift.Bool"
-                  moduleName = "CDMigrationTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ptikhonov/Desktop/Projects/Examples/CoreDataMigrationTest/CDMigrationTest/CDMigrationTest/Services/CDMigrationService.swift"
-                  timestampString = "540126995.907921"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CDMigrationTestTests.CDMigrationService.performMigration(at: Foundation.URL) -&gt; Swift.Bool"
-                  moduleName = "CDMigrationTestTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ptikhonov/Desktop/Projects/Examples/CoreDataMigrationTest/CDMigrationTest/CDMigrationTest/Services/CDMigrationService.swift"
-                  timestampString = "540127000.187474"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CDMigrationTest/Services/CDMigrationService.swift"
-            timestampString = "540127112.641555"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "performMigration(at:)"
             landmarkType = "7">
             <Locations>
@@ -266,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CDMigrationTest/Services/CDMigrationService.swift"
-            timestampString = "540127112.6416039"
+            timestampString = "540128159.1172611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "performMigration(at:)"
             landmarkType = "7">
             <Locations>
