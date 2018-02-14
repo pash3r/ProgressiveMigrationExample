@@ -50,7 +50,7 @@ final class CDMigrationService: NSObject {
         
         guard !managedObjectModel.isConfiguration(withName: nil, compatibleWithStoreMetadata: sourceMetadata) else {
             print("\(#function) all migration steps are passed")
-            return false
+            return true
         }
         
         guard let sourceModel = NSManagedObjectModel.mergedModel(from: nil, forStoreMetadata: sourceMetadata) else {
